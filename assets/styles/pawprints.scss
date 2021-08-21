@@ -849,6 +849,10 @@ footer {
     justify-content: space-between;
     padding: 1rem;
 
+    a {
+      color: white;
+    }
+
     .contacts {
       margin: 0 auto 1rem;
       .contact-item {
@@ -862,8 +866,8 @@ footer {
           flex-direction: row;
           align-items: center;
           text-decoration: none;
-          color: white;
         }
+
         .underlineLink {
           text-decoration: underline;
         }

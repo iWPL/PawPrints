@@ -956,6 +956,10 @@ footer .footerRow {
   padding: 1rem;
 }
 
+footer .footerRow a {
+  color: white;
+}
+
 footer .footerRow .contacts {
   margin: 0 auto 1rem;
 }
@@ -986,7 +990,6 @@ footer .footerRow .contacts .contact-item a {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: white;
 }
 
 footer .footerRow .contacts .contact-item .underlineLink {

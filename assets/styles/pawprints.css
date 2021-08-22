@@ -941,8 +941,18 @@ section .subtext {
 
 .gallery {
   width: 100%;
-  position: relative;
   height: 500px;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .gallery .galleryItem {
@@ -959,10 +969,6 @@ section .subtext {
   margin: auto;
   background-color: white;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-transform-origin: center;
           transform-origin: center;
 }
@@ -983,14 +989,175 @@ section .subtext {
   width: 500px;
 }
 
-.gallery .galleryItem01 {
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  z-index: 110;
-  -webkit-box-shadow: 0px 0px 10px black;
-          box-shadow: 0px 0px 10px black;
+.gallery .galleryItem11 {
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.gallery .galleryItem12 {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 98;
+}
+
+.gallery .galleryItem01,
+.gallery .galleryItem02,
+.gallery .galleryItem03,
+.gallery .galleryItem04,
+.gallery .galleryItem05,
+.gallery .galleryItem06,
+.gallery .galleryItem07,
+.gallery .galleryItem08,
+.gallery .galleryItem09,
+.gallery .galleryItem10 {
+  opacity: 0;
+  -webkit-animation: slideshow infinite linear;
+          animation: slideshow infinite linear;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+}
+
+.gallery .galleryItem01 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.gallery .galleryItem02 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.gallery .galleryItem03 {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.gallery .galleryItem04 {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.gallery .galleryItem05 {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.gallery .galleryItem06 {
+  -webkit-animation-delay: 25s;
+          animation-delay: 25s;
+}
+
+.gallery .galleryItem07 {
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+}
+
+.gallery .galleryItem08 {
+  -webkit-animation-delay: 35s;
+          animation-delay: 35s;
+}
+
+.gallery .galleryItem09 {
+  -webkit-animation-delay: 40s;
+          animation-delay: 40s;
+}
+
+.gallery .galleryItem10 {
+  -webkit-animation-delay: 45s;
+          animation-delay: 45s;
+}
+
+@-webkit-keyframes slideshow {
+  0% {
+    opacity: 1;
+    z-index: 110;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    z-index: 101;
+  }
+  30% {
+    opacity: 0;
+    z-index: 102;
+  }
+  40% {
+    z-index: 103;
+  }
+  50% {
+    z-index: 104;
+  }
+  60% {
+    z-index: 105;
+  }
+  70% {
+    opacity: 1;
+    z-index: 106;
+  }
+  80% {
+    opacity: 1;
+    z-index: 107;
+  }
+  90% {
+    opacity: 1;
+    z-index: 108;
+  }
+  100% {
+    opacity: 1;
+    z-index: 110;
+  }
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 1;
+    z-index: 110;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    z-index: 101;
+  }
+  30% {
+    opacity: 0;
+    z-index: 102;
+  }
+  40% {
+    z-index: 103;
+  }
+  50% {
+    z-index: 104;
+  }
+  60% {
+    z-index: 105;
+  }
+  70% {
+    opacity: 1;
+    z-index: 106;
+  }
+  80% {
+    opacity: 1;
+    z-index: 107;
+  }
+  90% {
+    opacity: 1;
+    z-index: 108;
+  }
+  100% {
+    opacity: 1;
+    z-index: 110;
+  }
 }
 
 /* -------------------- */

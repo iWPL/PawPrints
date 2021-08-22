@@ -296,12 +296,12 @@ header .banner .banner__body {
 
 header .banner .banner__body .banner__title {
   max-width: 22ch;
-  font-size: calc(1.45rem + 1.5vw);
+  font-size: clamp(1.75rem, 4vw, 3rem);
   margin: 0.5rem 0;
 }
 
 header .banner .banner__body .banner__desc {
-  font-size: calc(1rem + 0.75vw);
+  font-size: clamp(1.25rem, 2.25vw, 2rem);
   line-height: 1.25em;
   font-weight: 400;
   margin: 0.5rem 0;
@@ -666,6 +666,11 @@ section .sectionBody .mainBody .callToAction {
   margin: 2rem 0;
 }
 
+section .subtext {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
 /* ------ SECTION MEDIA QUERIES ------ */
 @media screen and (min-width: 750px) {
   section .sectionBody {
@@ -932,6 +937,60 @@ section .sectionBody .mainBody .callToAction {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.gallery {
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+
+.gallery .galleryItem {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 530px;
+  height: 400px;
+  margin: auto;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.gallery .galleryItem .galleryItem-picture {
+  margin: 15px auto;
+}
+
+.gallery .galleryItem .galleryItem-text {
+  margin: 0 auto;
+  font-family: Caveat;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+}
+
+.gallery .galleryItem img {
+  width: 500px;
+}
+
+.gallery .galleryItem01 {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  z-index: 110;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
 }
 
 /* -------------------- */

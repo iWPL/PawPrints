@@ -30,6 +30,7 @@ body {
   background: var(--clr-sec);
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 button {
@@ -947,6 +948,10 @@ section .subtext {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -969,8 +974,6 @@ section .subtext {
   margin: auto;
   background-color: white;
   position: absolute;
-  -webkit-transform-origin: center;
-          transform-origin: center;
 }
 
 .gallery .galleryItem .galleryItem-picture {
@@ -1015,148 +1018,216 @@ section .subtext {
 .gallery .galleryItem08,
 .gallery .galleryItem09,
 .gallery .galleryItem10 {
-  opacity: 0;
-  -webkit-animation: slideshow infinite linear;
-          animation: slideshow infinite linear;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
+  -webkit-animation: translate1 50s ease-in-out infinite;
+          animation: translate1 50s ease-in-out infinite;
 }
 
 .gallery .galleryItem01 {
+  z-index: 110;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
 .gallery .galleryItem02 {
+  z-index: 109;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
 
 .gallery .galleryItem03 {
+  z-index: 108;
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
 
 .gallery .galleryItem04 {
+  z-index: 107;
   -webkit-animation-delay: 15s;
           animation-delay: 15s;
 }
 
 .gallery .galleryItem05 {
+  z-index: 106;
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
 }
 
 .gallery .galleryItem06 {
+  z-index: 105;
   -webkit-animation-delay: 25s;
           animation-delay: 25s;
 }
 
 .gallery .galleryItem07 {
+  z-index: 104;
   -webkit-animation-delay: 30s;
           animation-delay: 30s;
 }
 
 .gallery .galleryItem08 {
+  z-index: 103;
   -webkit-animation-delay: 35s;
           animation-delay: 35s;
 }
 
 .gallery .galleryItem09 {
+  z-index: 102;
   -webkit-animation-delay: 40s;
           animation-delay: 40s;
 }
 
 .gallery .galleryItem10 {
+  z-index: 101;
   -webkit-animation-delay: 45s;
           animation-delay: 45s;
 }
 
-@-webkit-keyframes slideshow {
+@-webkit-keyframes translate1 {
   0% {
-    opacity: 1;
-    z-index: 110;
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    z-index: 109;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
   10% {
-    opacity: 1;
+    -webkit-transform: translate(0, 0) rotate(0deg) scale(1);
+            transform: translate(0, 0) rotate(0deg) scale(1);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 110;
+  }
+  11% {
+    -webkit-transform: translate(625px, -45px) rotate(15deg) scale(1.05);
+            transform: translate(625px, -45px) rotate(15deg) scale(1.05);
+    -webkit-box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.3);
+    z-index: 110;
+  }
+  12% {
+    z-index: 90;
+  }
+  13% {
+    -webkit-transform: translate(0, 0) rotate(0deg) scale(0.9);
+            transform: translate(0, 0) rotate(0deg) scale(0.9);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  14% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   20% {
-    z-index: 101;
-  }
-  30% {
-    opacity: 0;
     z-index: 102;
   }
-  40% {
+  30% {
     z-index: 103;
   }
-  50% {
+  40% {
     z-index: 104;
   }
-  60% {
+  50% {
     z-index: 105;
   }
-  70% {
-    opacity: 1;
+  60% {
     z-index: 106;
   }
-  80% {
-    opacity: 1;
+  70% {
     z-index: 107;
   }
-  90% {
-    opacity: 1;
+  80% {
     z-index: 108;
   }
+  90% {
+    z-index: 109;
+  }
+  99% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   100% {
-    opacity: 1;
     z-index: 110;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
 }
 
-@keyframes slideshow {
+@keyframes translate1 {
   0% {
-    opacity: 1;
-    z-index: 110;
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    z-index: 109;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
   10% {
-    opacity: 1;
+    -webkit-transform: translate(0, 0) rotate(0deg) scale(1);
+            transform: translate(0, 0) rotate(0deg) scale(1);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 110;
+  }
+  11% {
+    -webkit-transform: translate(625px, -45px) rotate(15deg) scale(1.05);
+            transform: translate(625px, -45px) rotate(15deg) scale(1.05);
+    -webkit-box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.3);
+    z-index: 110;
+  }
+  12% {
+    z-index: 90;
+  }
+  13% {
+    -webkit-transform: translate(0, 0) rotate(0deg) scale(0.9);
+            transform: translate(0, 0) rotate(0deg) scale(0.9);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  14% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   20% {
-    z-index: 101;
-  }
-  30% {
-    opacity: 0;
     z-index: 102;
   }
-  40% {
+  30% {
     z-index: 103;
   }
-  50% {
+  40% {
     z-index: 104;
   }
-  60% {
+  50% {
     z-index: 105;
   }
-  70% {
-    opacity: 1;
+  60% {
     z-index: 106;
   }
-  80% {
-    opacity: 1;
+  70% {
     z-index: 107;
   }
-  90% {
-    opacity: 1;
+  80% {
     z-index: 108;
   }
+  90% {
+    z-index: 109;
+  }
+  99% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   100% {
-    opacity: 1;
     z-index: 110;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gallery {
+    height: 350px;
+  }
+  .gallery .galleryItem {
+    width: 330px;
+    height: 275px;
+  }
+  .gallery .galleryItem img {
+    width: 300px;
   }
 }
 

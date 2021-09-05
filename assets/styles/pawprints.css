@@ -1,6 +1,6 @@
 /* -------- MOBILE FIRST -------- */
 :root {
-  --clr-pri: #835cc1;
+  --clr-pri: hsl(263, 45%, 56%);
   --clr-pri-dark: hsl(263, 45%, 41%);
   --clr-sec: hsl(289, 100%, 96%);
   --clr-tri: hsl(103, 56%, 32%);
@@ -686,7 +686,7 @@ section .sectionBody .mainBody .subSection {
 section .sectionBody .mainBody .subSection .colImg {
   width: 100%;
   max-width: 190px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 section .sectionBody .mainBody .subSection .colText {
@@ -732,7 +732,7 @@ section .subtext {
             flex-direction: row;
   }
   section .sectionBody .mainBody .subSection .colImg {
-    margin: 1rem;
+    margin-right: 2rem;
   }
 }
 

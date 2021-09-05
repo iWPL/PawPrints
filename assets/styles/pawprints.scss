@@ -589,6 +589,22 @@ section {
         justify-content: center;
         margin: 2rem 0;
       }
+
+      .subSection {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .colImg {
+          width: 100%;
+          max-width: 190px;
+          margin: 0 auto;
+        }
+
+        .colText {
+          margin: auto 0;
+        }
+      }
     }
   }
 
@@ -626,6 +642,22 @@ section {
         .callToAction {
           justify-content: flex-end;
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  section {
+    .sectionBody {
+      .mainBody {
+        .subSection {
+          flex-direction: row;
+
+          .colImg {
+            margin: 1rem;
+          }
         }
       }
     }

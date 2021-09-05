@@ -672,6 +672,27 @@ section .sectionBody .mainBody .callToAction {
   margin: 2rem 0;
 }
 
+section .sectionBody .mainBody .subSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .sectionBody .mainBody .subSection .colImg {
+  width: 100%;
+  max-width: 190px;
+  margin: 0 auto;
+}
+
+section .sectionBody .mainBody .subSection .colText {
+  margin: auto 0;
+}
+
 section .subtext {
   font-size: 1rem;
   margin-top: 2rem;
@@ -700,6 +721,18 @@ section .subtext {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  section .sectionBody .mainBody .subSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section .sectionBody .mainBody .subSection .colImg {
+    margin: 1rem;
   }
 }
 

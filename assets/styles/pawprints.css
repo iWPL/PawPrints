@@ -73,7 +73,8 @@ button:hover {
 
 .active {
   background-color: var(--clr-pri-dark);
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
+  padding: 0.25em;
 }
 
 a.noUnderline {

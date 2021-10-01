@@ -543,6 +543,7 @@ section .sectionBody .sidebar .factbox .number {
   font-weight: 700;
   line-height: 0.9em;
   margin: auto 0;
+  text-align: center;
 }
 
 section .sectionBody .sidebar .factbox .bigNumber {
@@ -563,6 +564,7 @@ section .sectionBody .sidebar .factbox .text-only {
 section .sectionBody .sidebar .factbox .unit {
   font-size: calc(0.75rem + 0.5vw);
   font-weight: 600;
+  text-align: center;
 }
 
 section .sectionBody .sidebar .factbox .numList {

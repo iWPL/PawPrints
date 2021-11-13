@@ -106,6 +106,9 @@ header .navrow {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  height: 95px;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-shadow: 0px 10px 10px -10px black;
           box-shadow: 0px 10px 10px -10px black;
   z-index: 10;
@@ -123,6 +126,8 @@ header .navrow .logo {
 header .navrow .logo img {
   max-width: 250px;
   margin: 0.5rem 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header .navrow .nav-toggle {
@@ -180,6 +185,7 @@ header .navrow .nav-toggle-label span::after {
 }
 
 header .navrow nav {
+  height: 95px;
   margin: 0;
   position: absolute;
   top: 100%;
